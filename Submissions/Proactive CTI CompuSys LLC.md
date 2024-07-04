@@ -23,7 +23,7 @@ _Link to CompuSys: Technology asset_
 
 Mandiant is tracking 4 uncategorized (UNC) threat actors exploiting this vulnerability, including those deploying Lockbit ransomware. This vulnerability is also in CISA's Known Exploited Vulnerability (KEV) Catalog as "Known" to be involved in ransomware campaigns. It was added to the KEV only after 8 days of a published CVE, this pattern is consistent with commodity and widely publicized exploits being used by ransomware threat actors.
 
-Note: Citrix Netscalers and ADC Gateways also had an unauthenticated remote code execution vulnerability reported in Summer 2023[1].  Given the continued success of eCrime actors and interest into these devices. It is expected that this Citrix Netscaler/ADC appliances will be of continued interest to threat actors.
+Note: Citrix Netscalers and ADC Gateways also had an unauthenticated remote code execution vulnerability reported in Summer 2023[1].  Given the continued success of eCrime actors and interest into these devices, It is expected that this Citrix Netscaler/ADC appliances will be of continued interest to threat actors.
 
 | MITRE ATT&CK Tactic | Technique |
 |----------|----------|
@@ -57,7 +57,7 @@ _Link to CompuSys: Technology Asset, Peer victim (Cloudflare)_
 
   It is unclear if CompuSys's Confluence instance is publicly accessible. However, identity (tokens/service principals/user credentials) based attacks for the purpose of information gathering/collection and subsequent persistence using higher level privileges (that are documented in Confluence) have been observed by threat actors associated to software supply chain attacks (Okta) leading into Cloudflare's Confluence environment.
 
- In Cloudflare's incident, the TA used a service token and abandoned accounts that were stolen from Okta to authenticate to Confluence. The TA's end goal was to discover secrets related to Cloudflare's infrastructure (specifically remote access and end user management tools). For persistence, the actor created a new user in Confluence and added the to multiple groups. They were also able to pivot to JIRA and install a script runner plugin that was then used to activate C2 (using the Silver Framework) between the Atlassian server and TA controlled infrastructure.
+ In Cloudflare's incident, the TA used a service token and abandoned accounts that were stolen from Okta to authenticate to Confluence. The TA's end goal was to discover secrets related to Cloudflare's infrastructure (specifically remote access and end user management tools). For persistence, the actor created a new user in Confluence and added the to multiple groups. They were also able to pivot to JIRA and install a script runner plugin that was then used to activate C2 (using the Sliver Framework) between the Atlassian server and TA controlled infrastructure.
 
 | MITRE ATT&CK Tactic | Technique |
 |----------|----------|
